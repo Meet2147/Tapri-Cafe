@@ -43,4 +43,4 @@ services:
       # Friendly download link that always points at the current release.
       - type: redirect
         source: /download
-        destination: /updates/Tapri-0.1.3.dmg
+        destination: /updates/Tapri-1.0.0.dmg

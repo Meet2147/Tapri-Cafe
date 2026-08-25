@@ -3,6 +3,20 @@
     <channel>
         <title>Tapri</title>
         <item>
+            <title>1.0.0</title>
+            <pubDate>Tue, 25 Aug 2026 17:27:54 +0530</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://tapri.dashovia.cafe/updates/Tapri-1.0.0.dmg" length="5188207" type="application/octet-stream" sparkle:edSignature="HWRvYS0AgzXJ0NcYc8EDBBiFkuL0je0cbgSg9VUdCw/zGV0Lv2Ajzr7c2DUzVzCywpsrmIhFJuWfDMkehn35CA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://tapri.dashovia.cafe/updates/Tapri5-4.delta" sparkle:deltaFrom="4" length="112038" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="eMmApl1gzAJqNJMmKnqGAojhMHP10iprlOk4zfhMT06rlLUJH6+u9bY2KoY1YqG448uCuD1FPVsF1hCMooPeDw=="/>
+                <enclosure url="https://tapri.dashovia.cafe/updates/Tapri5-3.delta" sparkle:deltaFrom="3" length="313406" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="UVEvywTnX64aSZhZZCz+GEMhkOMQc3rS+cjA2lP1naOVY2Acc7LhUV7xjw1IumsPLCJ5flSF69s55oF6iUp8Dw=="/>
+                <enclosure url="https://tapri.dashovia.cafe/updates/Tapri5-2.delta" sparkle:deltaFrom="2" length="332758" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="H7EMSBY2F2ZsGMzEAdySN5jHMc7aLNRiBu2uZoGgfOywkElrcjSK51MQkYKiFnyvPJfmJKvYvR23y1r5D0/YCQ=="/>
+                <enclosure url="https://tapri.dashovia.cafe/updates/Tapri5-1.delta" sparkle:deltaFrom="1" length="333550" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="KpzpCUxsHgEH959G3uouQPv7OJImcJ2bTrb9qaiTql8uEuvrEqXfYRKF51GpDOit1OLf8R2l3xbh2S5Y1zJjDg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.3</title>
             <pubDate>Tue, 25 Aug 2026 16:39:29 +0530</pubDate>
             <sparkle:version>4</sparkle:version>
@@ -25,17 +39,6 @@
             <sparkle:deltas>
                 <enclosure url="https://tapri.dashovia.cafe/updates/Tapri3-2.delta" sparkle:deltaFrom="2" length="225130" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="rQM1au/I0uqcOYvmKnSnP/CBDQxrVt+Rm8KaQIgBEz3VBc+4LbRazF5Mdg+2Sqo8rf3lVe+HDI5Il9VpfqLPAA=="/>
                 <enclosure url="https://tapri.dashovia.cafe/updates/Tapri3-1.delta" sparkle:deltaFrom="1" length="226534" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="qSqJXczOUrRhJje5+s29TT17ntYlIurYuIDKzPiExNUaCAy8Vssxa29D+h6l6+Fb66o9pKIbvsrq881zv3VZAg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.1.1</title>
-            <pubDate>Tue, 25 Aug 2026 14:56:22 +0530</pubDate>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://tapri.dashovia.cafe/updates/Tapri-0.1.1.dmg" length="5183294" type="application/octet-stream" sparkle:edSignature="KjUU61eQOL2nFJptMki/MtQouZXbVrY4tnPoJBNGONJyYPb2aU4mBXH+aQXzlbXQjAQZun56he3RxiAVhpyhDg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://tapri.dashovia.cafe/updates/Tapri2-1.delta" sparkle:deltaFrom="1" length="11954" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="rsOF4QQBZ9h370J+JOt7H/YnAgv8kdcz29cLtK/pYznH2H1+g9R/YdufPDUxFj0AALO86TL+fG9pIj+0nqOdDQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
