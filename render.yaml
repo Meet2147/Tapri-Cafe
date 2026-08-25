@@ -1,17 +1,21 @@
-# tapri.dashovia.cafe
+# Render deployment for tapri.dashovia.cafe
 #
-# A static site: the landing page and the Sparkle update feed deploy together,
-# so publishing the site publishes the updates. No server, no start command.
+# This is a static site: the landing page and the Sparkle update feed are the
+# same deploy, so publishing the site publishes the updates. There is no server
+# and therefore no start command — Render serves ./site directly.
 services:
   - type: web
     name: tapri
     runtime: static
+    # Nothing to build. The page is hand-written HTML with its images inlined,
+    # and the update feed is generated locally by scripts/appcast.sh because it
+    # has to be signed with a key that must never leave your Keychain.
     buildCommand: "echo 'static site — nothing to build'"
-    staticPublishPath: .
+    staticPublishPath: ./site
 
     headers:
-      # Sparkle polls this daily. A long cache leaves customers on a stale feed
-      # for hours after a release goes out.
+      # Sparkle polls this daily. A long cache would leave customers looking at
+      # a stale feed for hours after a release goes out.
       - path: /updates/appcast.xml
         name: Cache-Control
         value: public, max-age=300, must-revalidate
@@ -19,8 +23,8 @@ services:
         name: Content-Type
         value: application/xml; charset=utf-8
 
-      # Disk images are immutable — the filename carries the version, so a new
-      # release is a new URL and nothing is ever overwritten in place.
+      # Disk images and deltas are immutable — the filename carries the version,
+      # so a new release is a new URL and this can be cached hard.
       - path: /updates/*.dmg
         name: Cache-Control
         value: public, max-age=31536000, immutable
@@ -36,6 +40,7 @@ services:
         value: strict-origin-when-cross-origin
 
     routes:
+      # Friendly download link that always points at the current release.
       - type: redirect
         source: /download
-        destination: /updates/Tapri-0.1.1.dmg
+        destination: /updates/Tapri-0.1.2.dmg

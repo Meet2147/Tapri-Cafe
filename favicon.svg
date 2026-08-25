@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- The same tapered cutting-chai glass as the menu bar icon. A pinched
+       waist and a foot vanish below about 20px, so the silhouette is a bold
+       taper and nothing else. -->
+  <defs>
+    <linearGradient id="tea" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#6E3200"/>
+      <stop offset="1" stop-color="#C4661A"/>
+    </linearGradient>
+    <clipPath id="inside">
+      <path d="M16 18 H48 Q45 44 42 55 H22 Q19 44 16 18 Z"/>
+    </clipPath>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#140F09"/>
+  <g clip-path="url(#inside)">
+    <rect x="10" y="24" width="44" height="34" fill="url(#tea)"/>
+  </g>
+  <path d="M16 18 H48 Q45 44 42 55 H22 Q19 44 16 18 Z"
+        fill="none" stroke="#D2B4A0" stroke-width="3.4" stroke-linejoin="round"/>
+  <g stroke="#D2B4A0" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".75">
+    <path d="M25 12 q4 -5 0 -9"/>
+    <path d="M39 12 q4 -5 0 -9"/>
+  </g>
+</svg>
